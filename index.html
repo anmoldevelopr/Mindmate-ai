@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI GK & Aptitude Bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔮 Animated Background (setup in CSS) -->
+  <div class="background-animated">
+    <div class="ai-circle one"></div>
+    <div class="ai-circle two"></div>
+    <div class="ai-circle three"></div>
+  </div>
+
+  <!-- 🤖 App Container -->
+  <div class="app-container">
+    <header class="app-header">
+      <h1>🧠 MINDMATE</h1>
+      <p>Practice Current Affairs, GK, GS, and Aptitude — Unlimited, Real-time 🚀</p>
+    </header>
+
+    <!-- 🗨️ Chat Display Area -->
+    <main id="chat-area" class="chat-area">
+      <div class="bot-message">Welcome! Select a topic to begin.</div>
+    </main>
+
+    <!-- 📂 Topic Selector & Input -->
+    <section class="input-section">
+      <select id="topic-select">
+        <option value="">-- Select Topic --</option>
+        <!-- Aptitude -->
+        <optgroup label="Aptitude">
+          <option value="percentage">Percentage</option>
+          <option value="profitLoss">Profit & Loss</option>
+          <option value="timeWork">Time & Work</option>
+        </optgroup>
+
+        <!-- GK -->
+        <optgroup label="General Knowledge">
+          <option value="sports">Sports</option>
+          <option value="awards">Awards</option>
+          <option value="books">Books & Authors</option>
+        </optgroup>
+
+        <!-- GS -->
+        <optgroup label="General Studies">
+          <option value="history">History</option>
+          <option value="geography">Geography</option>
+          <option value="polity">Polity</option>
+        </optgroup>
+
+        <!-- Current Affairs -->
+        <optgroup label="Current Affairs">
+          <option value="currentAffairs">Current Affairs (2025)</option>
+        </optgroup>
+      </select>
+
+      <input type="text" id="user-input" placeholder="Enter your answer..." />
+      <button id="send-btn">Send</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
